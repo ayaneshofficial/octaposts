@@ -117,7 +117,7 @@
 
     }
 
-    public function show($id) {
+    public function show($id = 0) {
 
       if ($id == null) {
         redirect('posts');
@@ -135,7 +135,11 @@
 
     }
 
-    public function edit($id) {
+    public function edit($id = 0) {
+
+      if ($id == null) {
+        redirect('posts');
+      }
       
       // Get existing Post From Model
       $post = $this->postModel->getPostById($id);
@@ -243,7 +247,11 @@
 
     }
 
-    public function delete($id) {
+    public function delete($id = 0) {
+
+      if ($id == null) {
+        redirect('posts');
+      }
 
       // Get existing Post From Model
       $post = $this->postModel->getPostById($id);
