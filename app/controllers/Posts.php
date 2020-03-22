@@ -119,6 +119,10 @@
 
     public function show($id) {
 
+      if ($id == null) {
+        redirect('posts');
+      }
+
       $post = $this->postModel->getPostById($id);
       $user = $this->userModel->getUserById($post->user_id);
 
