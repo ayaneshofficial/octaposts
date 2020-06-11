@@ -10,9 +10,9 @@
   define('APPROOT', dirname(dirname(__FILE__)));
 
   // URL Root
-  define('URLROOT', 'http://localhost/octaposts');
+  define('URLROOT', 'http://octaposts.local');
   // IMG Root
-  define('IMGROOT', 'C:/xampp/htdocs/octaposts/public/img/');
+  define('IMGROOT', 'D:Apps/xampp/htdocs/octaposts/public/img/');
 
   // Site Name
   define('SITENAME', 'OctaPosts');
